@@ -2,7 +2,7 @@ name: First Custom Module
 # Is it a module type or theme type that will be defined here.
 type: module
 # Description of this module.
-description: This is the first custom module.
+description: 'This is the first custom module.'
 # This package name will be shown in the extend page.
 package: Custom Module
 # After drupal 8 core key is replaced by core_version_requirement. During the
