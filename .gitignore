@@ -67,7 +67,7 @@
 #vs code
 .vscode
 
-web/modules/custom/config_form
+# For the other experimental modules.
 web/modules/custom/employee
 web/modules/custom/roar
 web/modules/custom/routing

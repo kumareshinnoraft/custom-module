@@ -20,7 +20,7 @@ class HelloUserController extends ControllerBase {
    */
   public function greetUser() {
 
-    // Getting current user logged user.
+    // Getting current logged user.
     $current_user = Drupal::currentUser();
 
     return [
