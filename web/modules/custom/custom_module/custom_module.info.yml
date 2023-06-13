@@ -9,10 +9,8 @@ package: Custom Module
 # installation time it checks whether the current project is compatible with
 # the specified module version in module.
 core_version_requirement: ^9 || ^10
-# Dependencies are the list of fields which defines the necessary modules while
-# using this custom module. During the installation process if composer don't
-# find this module, composer will install the dependencies and then start 
-# install the custom module.
+# This dependencies will be enabled and disabled when the this custom module
+# will be enabled or disabled.
 dependencies:
   - drupal:field
   - drupal:user
