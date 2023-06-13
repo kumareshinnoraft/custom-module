@@ -1,0 +1,18 @@
+name: First Custom Module
+# Is it a module type or theme type that will be defined here.
+type: module
+# Description of this module.
+description: This is the first custom module.
+# This package name will be shown in the extend page.
+package: Custom Module
+# After drupal 8 core key is replaced by core_version_requirement. During the
+# installation time it checks whether the current project is compatible with
+# the specified module version in module.
+core_version_requirement: ^9 || ^10
+# Dependencies are the list of fields which defines the necessary modules while
+# using this custom module. During the installation process if composer don't
+# find this module, composer will install the dependencies and then start 
+# install the custom module.
+dependencies:
+  - drupal:field
+  - drupal:user
