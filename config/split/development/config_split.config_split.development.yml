@@ -6,7 +6,7 @@ id: development
 label: development
 description: ''
 weight: 0
-folder: ../config/development
+folder: ../config/split/development
 module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
