@@ -1,0 +1,9 @@
+name: First Custom Module
+type: module
+description: This is the first custom module.
+package: Custom Module
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - drupal:field
+  - drupal:user
