@@ -1,4 +1,0 @@
-access the custom page:
-  title: 'This is a custom permission page'
-  description: 'This permission is a custom permission.'
-  restrict access: true
