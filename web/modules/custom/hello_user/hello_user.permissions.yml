@@ -1,4 +1,5 @@
 # This key name of the permission will be used further in code.
+# Permission has been added in the routing configuration.
 hello user permission:
   # Title of the permission will be viewed by administrator.
   title: 'Permission for hello user.'

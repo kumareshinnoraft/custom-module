@@ -8,5 +8,5 @@ hello_user.greet_user:
     _controller: '\Drupal\hello_user\Controller\HelloUserController::greetUser'
   requirements:
   # Access content allows all roles to access the page.
-    _permission: 'access content'
+    _permission: 'hello user permission'
 
