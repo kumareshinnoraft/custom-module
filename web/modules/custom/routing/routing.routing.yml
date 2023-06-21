@@ -1,0 +1,9 @@
+routing.example:
+  path: '/routing'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\routing\Controller\RoutingController::build'
+  requirements:
+    # Only the administrator & content editor will be able to access the page. 
+    _permission: 'administrator|content_editor'
+
