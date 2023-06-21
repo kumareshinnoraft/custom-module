@@ -141,7 +141,7 @@ class ConfigForm extends ConfigFormBase
 
     // TODO: There are lot of public domains are available for now four
     // are checked later if require code will be modified.
-    $public_domains = ['yahoo.com', 'gmail.com', 'outlook.com', '126'];
+    $public_domains = ['yahoo.com', 'gmail.com', 'outlook.com', '126', 'innoraft.com'];
     $email_domain = substr(strrchr($email, "@"), 1);
 
     if (!preg_match('/^[0-9]{10}$/', $phone_number)) {
