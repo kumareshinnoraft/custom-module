@@ -4,6 +4,7 @@ namespace Drupal\routing\Controller;
 
 use Drupal;
 use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
@@ -37,6 +38,22 @@ class RoutingController extends ControllerBase
     // Returning a simply welcome message to the user.
     return [
       '#title' => $this->t('Welcome')
+    ];
+  }
+
+  /**
+   * This function is used for the dynamic value from the URL.
+   * 
+   * @param Request $request
+   *   This is the request that holds the client side requested data.
+   * 
+   * @return array
+   *   Returns array with global value translate variable.
+   */
+  public function parameter(Request $request)
+  {
+    return [
+      '#title' => $this->t('Welcome ' . $request->get('num'))
     ];
   }
 }
