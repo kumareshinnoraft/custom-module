@@ -2,7 +2,9 @@
 
 namespace Drupal\routing\Controller;
 
+use Drupal;
 use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
  * This controller is used to pass dynamic values from parameter and also it 
@@ -24,6 +26,14 @@ class RoutingController extends ControllerBase
    */
   public function build()
   {
+    // Getting the current user.
+    $currentUser = Drupal::currentUser();
+
+    // Find the roles from the array.
+    if (in_array('content_editor', $currentUser->getRoles())) {
+      throw new AccessDeniedHttpException();
+    }
+
     // Returning a simply welcome message to the user.
     return [
       '#title' => $this->t('Welcome')
