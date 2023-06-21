@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for services module.
+ */
+
+function services_module_implements_alter(&$implementations, $hook)
+{
+  if($hook === 'tracer_info_alter') {
+    // dd("working");
+  }
+
+}

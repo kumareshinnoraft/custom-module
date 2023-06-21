@@ -1,0 +1,8 @@
+services.example:
+  path: '/services'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\services\Controller\ServicesController::build'
+  requirements:
+    _permission: 'access content'
+
