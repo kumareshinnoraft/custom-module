@@ -1,5 +1,0 @@
-name: services
-type: module
-description: This module is for checking different services.
-package: Custom Module
-core_version_requirement: ^9 || ^10
