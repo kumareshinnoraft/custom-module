@@ -4,6 +4,6 @@ routing.example:
     _title: 'Example'
     _controller: '\Drupal\routing\Controller\RoutingController::build'
   requirements:
-    # Only the administrator & content editor will be able to access the page. 
+    # Only who have access the permission of 'access the custom page'. 
     _permission: 'access the custom page'
 
